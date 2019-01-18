@@ -1,0 +1,5 @@
+{% comment %} Assign random number to be used as unique id {% endcomment %}
+{% assign min = 100 %}
+{% assign max = 50000 %}
+{% assign diff = max | minus: min %}
+{% assign randomNum = "now" | date: "%N" | modulo: diff | plus: min %}
